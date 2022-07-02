@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button,input{
+    outline: none;
+    border: none;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    >div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    &__logo{
+        width: 70px;
+        height: 70px;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 500px;
+        width: 100%;
+
+        a{
+            color: white;
+            transition: 0.5s;
+
+            &:hover{
+                border-bottom: 1px solid;
+            }
+        }
+    }
+
+    &__basket{
+        width: 50px;
+        height: 50px;
+    }
+    
+    &__hambur-menu{
+        width: 40px;
+        height: 40px;
+        display: none;
+    }
+}
+
+.header-modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    &__blur{
+        width: 100%;
+        height: 100vh;
+        filter: blur(4px);
+    }
+    &__content{
+        max-width: 370px;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        padding: 3% 7%;
+    }
+    &__box-top{
+       display: flex;
+       align-items: center;
+       justify-content: space-between; 
+    }
+    &__icons{
+        width: 40px;
+        height: 40px;
+    }
+    &__list{
+        margin-top: 20%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        li{
+            margin-top: 20%;
+            font-size: 20px;
+        }
+    }
+}
+main{
+    padding-top: 200px;
+}
+.section-slider{
+    &__title{
+        text-align: center;
+    
+    }
+    &__slider{
+        margin-top: 50px !important;
+        max-width: 800px; 
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media(max-width: 1280px){
+    .container{
+        margin: 0;
+        padding: 0 10%;
+    }
+}
+
+@media(max-width: 990px){
+    .header{
+        &__list, &__basket{
+            display: none;
+        }
+        &__hambur-menu{
+            display: block;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .header{
+        &__logo{
+            width: 50px;
+            height: 50px;
+        }
+        &__basket, &__hambur-menu{
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .header-modal{
+        &__blur{
+            width: 0;
+        }
+        &__content{
+            max-width: 100%;
+        }
+    }
+}
