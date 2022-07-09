@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/commonStyle.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Baha black || г. Бишкек</title>
 </head>
 
@@ -36,30 +37,31 @@
             <img src="../images/header/basket.png" alt="basket" class="header__basket">
             <img src="../images/header/hamburger.png" alt="" class="header__hambur-menu" onclick="headerModal('flex')">
         </div>
-    </header>
-    <div class="header-modal">
-        <div class="header-modal__blur" onclick="headerModal('none')"></div>
-        <div class="header-modal__content">
-            <div class="header-modal__box-top">
-                <img src="../images/header/basket.png" alt="" class="header-modal__icons" id="basket">
-                <img src="../images/header/x.png" alt="" class="header-modal__icons" id="header-modal__x" onclick="headerModal('none')">
+        <div class="header-modal">
+            <div class="header-modal__blur" onclick="headerModal('none')"></div>
+            <div class="header-modal__content">
+                <div class="header-modal__box-top">
+                    <img src="../images/header/basket.png" alt="" class="header-modal__icons" id="basket">
+                    <img src="../images/header/x.png" alt="" class="header-modal__icons" id="header-modal__x" onclick="headerModal('none')">
+                </div>
+                <ul class="header__list header-modal__list">
+                    <li>
+                        <a href="./index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="./clothes.html">Одежда</a>
+                    </li>
+                    <li>
+                        <a href="./delivery.html">Достaвка</a>
+                    </li>
+                    <li>
+                        <a href="./aboutUs.html">О нас</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="header__list header-modal__list">
-                <li>
-                    <a href="./index.html">Главная</a>
-                </li>
-                <li>
-                    <a href="./clothes.html">Одежда</a>
-                </li>
-                <li>
-                    <a href="./delivery.html">Достaвка</a>
-                </li>
-                <li>
-                    <a href="./aboutUs.html">О нас</a>
-                </li>
-            </ul>
         </div>
-    </div>
+    </header>
+   
     <main>
         <section class="section-slider container">
             <h2 class="section-slider__title">Новая коллекция</h2>

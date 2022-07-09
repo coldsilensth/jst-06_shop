@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/commonStyle.css">
+    <link rel="stylesheet" href="../css/delivery.css">
+    <title>Baha black || г. Бишкек</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <img src="../images/common/logo.png" alt="logo" class="header__logo">
+            <ul class="header__list">
+                <li>
+                    <a href="./index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="./clothes.html">Одежда</a>
+                </li>
+                <li>
+                    <a href="./delivery.html">Достaвка</a>
+                </li>
+                <li>
+                    <a href="./aboutUs.html">О нас</a>
+                </li>
+            </ul>
+            <img src="../images/header/basket.png" alt="basket" class="header__basket">
+            <img src="../images/header/hamburger.png" alt="" class="header__hambur-menu" onclick="headerModal('flex')">
+        </div>
+        <div class="header-modal">
+            <div class="header-modal__blur" onclick="headerModal('none')"></div>
+            <div class="header-modal__content">
+                <div class="header-modal__box-top">
+                    <img src="../images/header/basket.png" alt="" class="header-modal__icons" id="basket">
+                    <img src="../images/header/x.png" alt="" class="header-modal__icons" id="header-modal__x"
+                        onclick="headerModal('none')">
+                </div>
+                <ul class="header__list header-modal__list">
+                    <li>
+                        <a href="./index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="./clothes.html">Одежда</a>
+                    </li>
+                    <li>
+                        <a href="./delivery.html">Достaвка</a>
+                    </li>
+                    <li>
+                        <a href="./aboutUs.html">О нас</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-info container">
+            <h2 class="section-info__title">Информация о достaвке</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente sunt culpa, natus cupiditate
+                ab dignissimos ullam fugiat aut voluptatibus possimus recusandae reprehenderit tenetur quod consequuntur
+                quibusdam suscipit. Facere officia exercitationem accusantium, cupiditate debitis fugiat quidem eligendi
+                tempora repudiandae nulla quasi obcaecati voluptatem doloribus voluptatum blanditiis laboriosam cum?
+                Laboriosam, repellendus neque. Vero praesentium quas quam fugit quos, corporis ipsa deleniti earum ullam
+                iure, error, at aliquid facere? Perspiciatis mollitia, itaque ut cumque illum libero ipsam obcaecati
+                earum quisquam. Laborum inventore adipisci voluptatibus expedita magnam similique, cum recusandae sequi?
+                Dicta possimus unde perspiciatis magnam natus aliquid labore hic adipisci mollitia nemo!</p>
+        </section>
+        <section class="section-form container">
+            
+            <form onsubmit = "deliverySubmit()" id="delivery-form">
+                <h2 class="section-form__title">Заявка на достaвку</h2>
+                <input type="text" placeholder="*ФИО" class="section-form__input" required>
+                <input type="number" placeholder="*номер телефона" class="section-form__input" required>
+                <input type="text" placeholder="*Адрес" class="section-form__input" required>
+                <textarea placeholder="Дополнительная информация" class="section-form__textarea"></textarea>
+                <button>Отправить</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+<script src="../js/header.js"></script>
+<script src="../js/delivery.js"></script>
+
 </body>
+
 </html>

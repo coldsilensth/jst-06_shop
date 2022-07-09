@@ -1,0 +1,41 @@
+.section-form {
+  margin-top: 100px;
+}
+.section-form__title {
+  text-align: center;
+  color: white;
+}
+.section-form form {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 10px;
+}
+.section-form form input {
+  margin-top: 30px;
+  width: 60%;
+  padding: 20px;
+}
+.section-form form select {
+  margin-top: 30px;
+  width: 60%;
+  height: 50px;
+}
+.section-form form textarea {
+  margin-top: 30px;
+  width: 60%;
+  height: 300px;
+  padding: 20px;
+}
+.section-form form button {
+  margin-top: 30px;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+}/*# sourceMappingURL=delivery.css.map */

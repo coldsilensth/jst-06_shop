@@ -1,0 +1,12 @@
+.section-slider{
+    &__title{
+        text-align: center;
+    
+    }
+    &__slider{
+        margin-top: 50px !important;
+        max-width: 800px; 
+        width: 100%;
+        margin: 0 auto;
+    }
+}
