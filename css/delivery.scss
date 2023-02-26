@@ -14,6 +14,10 @@
         max-width: 900px;
         width: 100%;
         border-radius: 10px;
+        p{
+            color: red;
+            margin-top: 20px;
+        }
         input{
             margin-top: 30px;
             width: 60%;
@@ -37,5 +41,14 @@
             height: 50px;
             border-radius: 5px;
         }
+    }
+    &__name-validation{
+        display: none;
+    }
+    &__phone-validation{
+        display: none;
+    }
+    &__input-validation{
+        margin-top: 5px !important;
     }
 }

@@ -78,10 +78,16 @@
             
             <form onsubmit = "deliverySubmit()" id="delivery-form">
                 <h2 class="section-form__title">Заявка на достaвку</h2>
-                <input type="text" placeholder="*ФИО" class="section-form__input" required>
-                <input type="number" placeholder="*номер телефона" class="section-form__input" required>
-                <input type="text" placeholder="*Адрес" class="section-form__input" required>
-                <textarea placeholder="Дополнительная информация" class="section-form__textarea"></textarea>
+                <p class="section-form__validation">
+                    <span class="section-form__name-validation">Неверный формат ФИО</span>
+                </p>
+                <input type="text" placeholder="*ФИО" class="section-form__input section-form__input-validation" minlength="6" required>
+                <p  class="section-form__validation">
+                    <span  class="section-form__phone-validation">Неверный формат номера телефона (0555222333)</span>
+                </p>
+                <input type="text" placeholder="*номер телефона" class="section-form__input section-form__input-validation" maxlength="10" minlength="10" required>
+                <input type="text" placeholder="*Адрес" class="section-form__input" minlength="6" required>
+                <textarea placeholder="Дополнительная информация" class="section-form__textarea" maxlength="100"></textarea>
                 <button>Отправить</button>
             </form>
 

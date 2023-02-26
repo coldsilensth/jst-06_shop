@@ -1,12 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="../css/commonStyle.css"> 
+    <link rel="stylesheet" href="../css/clothes.css"> 
+    <title>Baha black || г. Бишкек</title> 
+</head> 
+ 
+<body> 
+    <header class="header"> 
+        <div class="container"> 
+            <img src="../images/common/logo.png" alt="logo" class="header__logo"> 
+            <ul class="header__list"> 
+                <li> 
+                    <a href="./index.html">Главная</a> 
+                </li> 
+                <li> 
+                    <a href="./clothes.html">Одежда</a> 
+                </li> 
+                <li> 
+                    <a href="./delivery.html">Достaвка</a> 
+                </li> 
+                <li> 
+                    <a href="./aboutUs.html">О нас</a> 
+                </li> 
+            </ul> 
+            <img src="../images/header/basket.png" alt="basket" class="header__basket"> 
+            <img src="../images/header/hamburger.png" alt="" class="header__hambur-menu" onclick="headerModal('flex')"> 
+        </div> 
+        <div class="header-modal"> 
+            <div class="header-modal__blur" onclick="headerModal('none')"></div> 
+            <div class="header-modal__content"> 
+                <div class="header-modal__box-top"> 
+                    <img src="../images/header/basket.png" alt="" class="header-modal__icons" id="basket"> 
+                    <img src="../images/header/x.png" alt="" class="header-modal__icons" id="header-modal__x" 
+                        onclick="headerModal('none')"> 
+                </div> 
+                <ul class="header__list header-modal__list"> 
+                    <li> 
+                        <a href="./index.html">Главная</a> 
+                    </li> 
+                    <li> 
+                        <a href="./clothes.html">Одежда</a> 
+                    </li> 
+                    <li> 
+                        <a href="./delivery.html">Достaвка</a> 
+                    </li> 
+                    <li> 
+                        <a href="./aboutUs.html">О нас</a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </div> 
+    </header> 
+    <main> 
+       <section class="section-filter container"> 
+            <h2 class="section-filter__clothes">Одежда</h2> 
+            <div> 
+                <select class="section-filter__select" id="filter-category"> 
+                    <option value="all">все товары</option> 
+                    <option value="increasing">по возрастанию цены</option> 
+                    <option value="decreasing">по убыванию цены</option> 
+                    <option value="alphabet">по алфавиту</option> 
+                    <option value="sale">по скидке</option> 
+                </select> 
+                <input type="text" placeholder="Поиск по названию..." class="section-filter__input" id="search-name"> 
+                <select class="section-filter__select"> 
+                    <option>по размерам</option> 
+                    <option>XXL</option> 
+                    <option>XL</option> 
+                    <option>L</option> 
+                    <option>M</option> 
+                    <option>S</option> 
+                </select> 
+            </div> 
+       </section> 
+       <section class="section-cards container"> 
+           
+       </section>
+    </main> 
+    <footer> 
+ 
+    </footer> 
+    <script src="../js/header.js"></script> 
+    <script src="../js/clothes.js"></script> 
+</body> 
+ 
+</html> 

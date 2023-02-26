@@ -1,0 +1,57 @@
+.section-filter div {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-filter__select, .section-filter input {
+  width: 25%;
+  height: 60px;
+  font-size: 18px;
+  border: 2px solid;
+  padding: 0 15px;
+}
+
+.section-cards {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 20px;
+  justify-content: space-between;
+}
+.section-cards__card {
+  max-width: 350px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.section-cards__box-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.section-cards__box-img img {
+  width: 100%;
+  height: 100%;
+}
+.section-cards__box-img img:hover {
+  transform: scale(1.2);
+  transition: 500ms;
+}
+.section-cards__list li {
+  margin-top: 20px;
+}
+.section-cards__list-sale {
+  color: red;
+}
+.section-cards__box-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+}
+.section-cards__box-bottom img {
+  height: 30px;
+  width: 30px;
+}/*# sourceMappingURL=clothes.css.map */
